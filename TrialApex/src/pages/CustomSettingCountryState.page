@@ -1,0 +1,25 @@
+<apex:page controller="CustomSettingCountryController">
+<apex:form >
+<apex:pageblock >
+	<apex:pageBlocksection >
+		<apex:pageBlocksectionItem >
+			<apex:outputLabel value="Country"/>
+			<apex:selectList size="1" value="{!country}">
+                    <apex:selectOptions value="{!countries}"/>
+                    <apex:actionSupport event="onchange" reRender="a"/>
+                </apex:selectList>                
+		</apex:pageBlocksectionItem>
+	</apex:pageBlocksection>
+	<apex:pageblocksection >
+	<apex:pageblockSectionItem >
+                <apex:outputLabel value="city"/>
+            </apex:pageblockSectionItem>            
+            <apex:pageblockSectionItem >
+                <apex:selectList size="1" value="{!city}" id="a">
+                    <apex:selectOptions value="{!cities}"/>
+                </apex:selectList>
+            </apex:pageblockSectionItem>            
+        </apex:pageBlockSection>
+    </apex:pageblock>        
+</apex:form>
+</apex:page>

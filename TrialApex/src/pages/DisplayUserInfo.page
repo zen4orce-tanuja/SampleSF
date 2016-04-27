@@ -1,0 +1,7 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+ <apex:pageBlock title="User Status">
+  {!$User.FirstName} {!$User.Username}
+ </apex:pageBlock>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

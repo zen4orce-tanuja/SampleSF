@@ -1,0 +1,6 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Help For Candidate Object</h1>
+  <p>The candidate object is for tracking individual caniddates for job position</p>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
